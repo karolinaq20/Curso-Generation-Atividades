@@ -3,24 +3,19 @@
  * de forma que tudo o que for comum a todos os animais fique na classe Animal: */
 package ExerciciosPOO;
 
-public class Animais1 {
+public abstract class  Animais1 {
 //Características em comum nome,idade,emitir som.
 	private String nome;
 	private int idade;
-	
-	
-	public Animais1 (String nome,int idade)
-	{
+
+	public Animais1(String nome, int idade) {
 		super();
 		this.nome = nome;
-		this.idade =idade;
-		
-	}
-	public String emitirSom(String x)
-	{
-		return x;
+		this.idade = idade;
 	}
 
+	abstract String emitirSom();
+	
 	public String getNome() {
 		return nome;
 	}
@@ -36,5 +31,4 @@ public class Animais1 {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
 }
